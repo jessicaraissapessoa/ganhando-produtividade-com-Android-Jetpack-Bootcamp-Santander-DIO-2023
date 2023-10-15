@@ -6,12 +6,21 @@ import br.com.messoretech.databinding.ActivityMainBinding
 
 class MainActivity : AppCompatActivity() {
 
-    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) }
+    private val binding by lazy { ActivityMainBinding.inflate(layoutInflater) } //Variável global para o binding
 
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
 
         setContentView(binding.root)
         setSupportActionBar(binding.toolbar)
+
+        insertListeners()
+
+    }
+
+    private fun insertListeners() {
+        binding.cvButtons.setOnClickListener {
+            startActivity(ButtonsActivity.createIntent(this)) //Botão starta nova activity com método createIntent
+        }
     }
 }
