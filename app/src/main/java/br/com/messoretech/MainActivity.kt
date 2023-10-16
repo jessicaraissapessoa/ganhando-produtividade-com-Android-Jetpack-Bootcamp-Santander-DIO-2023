@@ -22,8 +22,14 @@ class MainActivity : AppCompatActivity() {
         binding.cvButtons.setOnClickListener {
             startActivity(ButtonsActivity.createIntent(this)) //Botão starta nova activity com método createIntent
         }
+
         binding.cvTextFields.setOnClickListener {
             startActivity(TextFieldsActivity.createIntent(this))
         }
+
+        binding.cvBottomSheets.setOnClickListener {
+            ModalBottomSheet.start(supportFragmentManager)
+        }
+
     }
 }
