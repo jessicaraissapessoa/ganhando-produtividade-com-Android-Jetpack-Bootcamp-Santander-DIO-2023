@@ -14,6 +14,9 @@ class TextFieldsActivity : AppCompatActivity() {
         super.onCreate(savedInstanceState)
 
         setContentView(binding.root)
+
+        binding.inputError.error = "Campo obrigatório" //setando o erro
+        //binding.inputError.error = null //removendo o erro
     }
 
     companion object {

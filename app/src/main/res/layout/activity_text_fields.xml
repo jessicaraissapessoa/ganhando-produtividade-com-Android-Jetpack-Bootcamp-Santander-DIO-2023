@@ -36,7 +36,7 @@
 
     </com.google.android.material.textfield.TextInputLayout>
 
-    <!-- Character counter / Leading icon -->
+    <!-- Character counter / Leading icon / Trailing Icon -->
 
     <com.google.android.material.textfield.TextInputLayout
         android:layout_marginTop="8dp"
@@ -48,7 +48,25 @@
         app:startIconDrawable="@drawable/ic_person"
         app:startIconTint="#ffeb3b"
         app:endIconDrawable="@drawable/ic_person"
-        app:endIconMode="password_toggle">
+        app:endIconMode="custom"
+        app:helperText="Insira o nome completo do seu companheiro de trabalho para que possamos acioná-lo caso seja preciso">
+
+        <com.google.android.material.textfield.TextInputEditText
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content" />
+
+    </com.google.android.material.textfield.TextInputLayout>
+
+    <!-- Helper text / Error text-->
+
+    <com.google.android.material.textfield.TextInputLayout
+        android:id="@+id/input_error"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Label"
+        app:helperText="Digite apenas números"
+        app:helperTextTextColor="@color/purple_200"
+        app:errorIconDrawable="@null">
 
         <com.google.android.material.textfield.TextInputEditText
             android:layout_width="match_parent"
