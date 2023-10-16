@@ -17,7 +17,7 @@ class ButtonsActivity : AppCompatActivity() {
     }
 
     companion object {
-        //Companion object para a nossa ButtonsActivity para que a gente consiga para permitir criar o método createIntent
+        //Companion object para a nossa ButtonsActivity para que a gente consiga permitir criar o método createIntent
         fun createIntent(context: Context): Intent = Intent(context, ButtonsActivity::class.java) //Inline function que retorna uma Intent
     }
 
