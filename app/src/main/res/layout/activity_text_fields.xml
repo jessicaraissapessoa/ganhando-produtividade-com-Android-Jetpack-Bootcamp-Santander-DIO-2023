@@ -48,7 +48,7 @@
         app:startIconDrawable="@drawable/ic_person"
         app:startIconTint="#ffeb3b"
         app:endIconDrawable="@drawable/ic_person"
-        app:endIconMode="custom"
+        app:endIconMode="password_toggle"
         app:helperText="Insira o nome completo do seu companheiro de trabalho para que possamos acioná-lo caso seja preciso">
 
         <com.google.android.material.textfield.TextInputEditText
