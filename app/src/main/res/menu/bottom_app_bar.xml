@@ -18,18 +18,6 @@
         app:showAsAction="ifRoom" />
 
     <item
-        android:id="@+id/search2"
-        android:icon="@drawable/ic_search"
-        android:title="Search"
-        app:showAsAction="ifRoom" />
-
-    <item
-        android:id="@+id/search3"
-        android:icon="@drawable/ic_search"
-        android:title="Search"
-        app:showAsAction="ifRoom" />
-
-    <item
         android:id="@+id/more"
         android:title="More"
         app:showAsAction="never" />

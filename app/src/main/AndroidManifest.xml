@@ -27,6 +27,7 @@
         <activity android:name="br.com.messoretech.TopAppBarActivity" />
         <activity android:name="br.com.messoretech.BottomAppBarActivity" />
         <activity android:name="br.com.messoretech.SnackbarActivity" />
+        <activity android:name="br.com.messoretech.BottomNavigationActivity" />
 
     </application>
 
