@@ -6,6 +6,8 @@ import android.os.Bundle
 import androidx.appcompat.app.AppCompatActivity
 import androidx.fragment.app.Fragment
 import br.com.messoretech.databinding.ActivityBottomNavigationBinding
+import br.com.messoretech.fragments.HomeFragment
+import br.com.messoretech.fragments.StarsFragment
 
 class BottomNavigationActivity : AppCompatActivity() {
 
@@ -17,11 +19,13 @@ class BottomNavigationActivity : AppCompatActivity() {
 
         binding.bottomNavigation.setOnItemSelectedListener { item ->
             when(item.itemId) {
-                R.id.home -> openFragment()
-                R.id.stars -> openFragment()
+                R.id.home -> openFragment(HomeFragment.newInstance())
+                R.id.stars -> openFragment(StarsFragment.newInstance())
             }
             true
         }
+
+        binding.bottomNavigation.selectedItemId = R.id.home //home vai começar selecionado
     }
 
     private fun openFragment(fragment: Fragment) {
